@@ -49,6 +49,7 @@ public class Main {
     }
 
     public static double calculateBalance(
+            //B = L[(1 + c)n - (1 + c)p]/[(1 + c)n - 1]
             int principal,
             float annualInterest,
             byte years,
@@ -62,6 +63,7 @@ public class Main {
                 / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
     }
 
+    //P = L[c(1 + c)n]/[(1 + c)n - 1]
     public static double calculateMortgage(
             int principal,
             float annualInterest,
